@@ -15,7 +15,7 @@ const ScreenContainer = ({ children, background, backgroundColor }) => {
   return <View style={[styles.container, { backgroundColor }]}>{children}</View>;
 };
 
-// 🌟 Pantalla de Inicio 1 (Con imagen de fondo)
+// 🌟 Pantalla de Inicio 1 
 function Inicio1({ navigation }) {
   return (
     <ScreenContainer background={require("./assets/background.jpg")}>
@@ -30,7 +30,7 @@ function Inicio1({ navigation }) {
   );
 }
 
-// 🌟 Pantalla de Inicio 2 (Con imagen de fondo)
+// 🌟 Pantalla de Inicio 2 
 function Inicio2({ navigation }) {
   return (
     <ScreenContainer background={require("./assets/background.jpg")}>
@@ -76,12 +76,13 @@ function SignUp({ navigation }) {
   );
 }
 
-// 🌟 Pantalla Principal (Home) (Con color de fondo específico y botón de búsqueda)
+// 🌟 Pantalla Home
 function Home({ navigation }) {
   return (
     <ScreenContainer backgroundColor="#FAE5D3">
-      <Text style={styles.title}>¡Bienvenido a tu cocina! 👨‍🍳</Text>
-
+      <Text style={styles.title}>¡Bienvenido a tu cocina Wilson! 👨‍🍳</Text>
+      <Image source={require("./assets/Chef.jpg")} style={styles.chefImage} />
+      <Text style={styles.title}>¿Que haremos hoy?</Text>
       <TouchableOpacity style={styles.button} onPress={() => alert("Buscar Recetas")}>
         <Text style={styles.buttonText}>🔍 Buscar Recetas</Text>
       </TouchableOpacity>
@@ -140,9 +141,9 @@ const styles = StyleSheet.create({
   chefImage: {
     width: 150,
     height: 150,
-    borderRadius: 75, 
-    overflow: "hidden", 
     marginBottom: 20,
+    borderRadius: 75, 
+    overflow: "hidden",
   },
   question: {
     fontSize: 20,
