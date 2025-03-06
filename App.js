@@ -1,69 +1,105 @@
 import React from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet, ImageBackground } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const Stack = createStackNavigator();
+// 🌟 Componente reutilizable para pantallas con imagen o color de fondo
+const ScreenContainer = ({ children, background, backgroundColor }) => {
+  if (background) {
+    return (
+      <ImageBackground source={background} style={styles.backgroundImage}>
+        <View style={styles.container}>{children}</View>
+      </ImageBackground>
+    );
+  }
+  return <View style={[styles.container, { backgroundColor }]}>{children}</View>;
+};
 
-const Inicio1 = ({ navigation }) => (
-  <View style={styles.container}>
-    <Text style={styles.title}>Bienvenid@ a CUCHARA Y ACCIÓN</Text>
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Inicio2")}>
-      <Text style={styles.buttonText}>CONTINUAR</Text>
-    </TouchableOpacity>
-  </View>
-);
+// 🌟 Pantalla de Inicio 1 (Con imagen de fondo)
+function Inicio1({ navigation }) {
+  return (
+    <ScreenContainer background={require("./assets/background.jpg")}>
+      <Text style={styles.title}>Bienvenid@ a</Text>
+      <Text style={styles.subtitle}>⭐ CUCHARA Y ACCIÓN 🍽️</Text>
+      <Image source={require("./assets/chef.gif")} style={styles.chefImage} />
 
-const Inicio2 = ({ navigation }) => (
-  <View style={styles.container}>
-    <Text style={styles.subtitle}>¿Cansado de cocinar siempre lo mismo?</Text>
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
-      <Text style={styles.buttonText}>¡LISTO PARA SORPRENDERTE!</Text>
-    </TouchableOpacity>
-  </View>
-);
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Inicio2")}>
+        <Text style={styles.buttonText}>CONTINUAR</Text>
+      </TouchableOpacity>
+    </ScreenContainer>
+  );
+}
 
-const Login = ({ navigation }) => (
-  <View style={styles.container}>
-    <Text style={styles.subtitle}>¡Hola, chef!</Text>
-    <TextInput placeholder="Email" style={styles.input} />
-    <TextInput placeholder="Password" secureTextEntry style={styles.input} />
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Home")}>
-      <Text style={styles.buttonText}>Login</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => navigation.navigate("SignUp")}>
-      <Text style={styles.link}>Don't have an account? Sign Up</Text>
-    </TouchableOpacity>
-  </View>
-);
+// 🌟 Pantalla de Inicio 2 (Con imagen de fondo)
+function Inicio2({ navigation }) {
+  return (
+    <ScreenContainer background={require("./assets/background.jpg")}>
+      <Text style={styles.question}>¿Cansado de cocinar siempre lo mismo?</Text>
+      <Text style={styles.description}>Descubre recetas nuevas y deliciosas en segundos.</Text>
+      <Text style={styles.description}>Solo elige, cocina y sorprende a todos.</Text>
 
-const SignUp = ({ navigation }) => (
-  <View style={styles.container}>
-    <Text style={styles.subtitle}>Crea una cuenta</Text>
-    <TextInput placeholder="Enter your email" style={styles.input} />
-    <TextInput placeholder="Password" secureTextEntry style={styles.input} />
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Home")}>
-      <Text style={styles.buttonText}>Sign Up</Text>
-    </TouchableOpacity>
-  </View>
-);
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
+        <Text style={styles.buttonText}>¿LISTO PARA SORPRENDERTE?</Text>
+      </TouchableOpacity>
+    </ScreenContainer>
+  );
+}
 
-const Home = () => (
-  <View style={styles.container}>
-    <Text style={styles.title}>¡Bienvenido, Wilson!</Text>
-    <TouchableOpacity style={styles.button}>
-      <Text style={styles.buttonText}>CREAR TU PROPIA RECETA</Text>
-    </TouchableOpacity>
-    <TouchableOpacity style={styles.button}>
-      <Text style={styles.buttonText}>BUSCAR RECETAS</Text>
-    </TouchableOpacity>
-  </View>
-);
+// 🌟 Pantalla de Login (Con color de fondo específico)
+function Login({ navigation }) {
+  return (
+    <ScreenContainer backgroundColor="#FAE5D3">
+      <Text style={styles.title}>Iniciar Sesión</Text>
+      <TextInput style={styles.input} placeholder="Correo electrónico" keyboardType="email-address" />
+      <TextInput style={styles.input} placeholder="Contraseña" secureTextEntry />
+
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Home")}>
+        <Text style={styles.buttonText}>Iniciar Sesión</Text>
+      </TouchableOpacity>
+    </ScreenContainer>
+  );
+}
+
+// 🌟 Pantalla de Registro (SignUp) (Con color de fondo específico)
+function SignUp({ navigation }) {
+  return (
+    <ScreenContainer backgroundColor="#FAE5D3">
+      <Text style={styles.title}>Crea una Cuenta</Text>
+      <TextInput style={styles.input} placeholder="Correo electrónico" keyboardType="email-address" />
+      <TextInput style={styles.input} placeholder="Teléfono" keyboardType="phone-pad" />
+      <TextInput style={styles.input} placeholder="Contraseña" secureTextEntry />
+
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Home")}>
+        <Text style={styles.buttonText}>Registrarse</Text>
+      </TouchableOpacity>
+    </ScreenContainer>
+  );
+}
+
+// 🌟 Pantalla Principal (Home) (Con color de fondo específico y botón de búsqueda)
+function Home({ navigation }) {
+  return (
+    <ScreenContainer backgroundColor="#FAE5D3">
+      <Text style={styles.title}>¡Bienvenido a tu cocina! 👨‍🍳</Text>
+
+      <TouchableOpacity style={styles.button} onPress={() => alert("Buscar Recetas")}>
+        <Text style={styles.buttonText}>🔍 Buscar Recetas</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.buttonSecondary} onPress={() => alert("Crear Receta")}>
+        <Text style={styles.buttonText}>🍲 Crear Receta</Text>
+      </TouchableOpacity>
+    </ScreenContainer>
+  );
+}
+
+// Configuración de la Navegación
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName="Inicio1" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Inicio1" component={Inicio1} />
         <Stack.Screen name="Inicio2" component={Inicio2} />
         <Stack.Screen name="Login" component={Login} />
@@ -74,47 +110,81 @@ export default function App() {
   );
 }
 
+// 🎨 Estilos
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+  },
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F4C7A4",
+    padding: 20,
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
+    color: "#333",
   },
   subtitle: {
     fontSize: 18,
+    fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
+    color: "#555",
+  },
+  chefImage: {
+    width: 150,
+    height: 150,
+    borderRadius: 75, 
+    overflow: "hidden", 
+    marginBottom: 20,
+  },
+  question: {
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 10,
+    color: "#333",
+  },
+  description: {
+    fontSize: 16,
+    textAlign: "center",
+    marginBottom: 10,
+    color: "#555",
   },
   input: {
     width: "80%",
     padding: 10,
-    marginVertical: 10,
     borderWidth: 1,
     borderColor: "#ccc",
     borderRadius: 5,
+    marginBottom: 15,
+    backgroundColor: "#fff",
   },
   button: {
-    backgroundColor: "#FF7F3F",
+    backgroundColor: "#ff6f00",
     padding: 15,
     borderRadius: 10,
-    marginVertical: 10,
+    marginTop: 20,
+    width: "80%",
+    alignItems: "center",
+  },
+  buttonSecondary: {
+    backgroundColor: "#ff9800",
+    padding: 15,
+    borderRadius: 10,
+    marginTop: 10,
     width: "80%",
     alignItems: "center",
   },
   buttonText: {
-    color: "white",
-    fontSize: 16,
+    color: "#fff",
     fontWeight: "bold",
-  },
-  link: {
-    color: "blue",
-    marginTop: 10,
+    fontSize: 16,
   },
 });
