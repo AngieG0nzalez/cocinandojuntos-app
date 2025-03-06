@@ -3,6 +3,9 @@ import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet, ImageBackgr
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+const API_MEALDB = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+const API_COUNTRIES = "https://restcountries.com/v3.1/all";
+
 // 🌟 Componente reutilizable para pantallas con imagen o color de fondo
 const ScreenContainer = ({ children, background, backgroundColor }) => {
   if (background) {
@@ -83,14 +86,113 @@ function Home({ navigation }) {
       <Text style={styles.title}>¡Bienvenido a tu cocina Wilson! 👨‍🍳</Text>
       <Image source={require("./assets/Chef.jpg")} style={styles.chefImage} />
       <Text style={styles.title}>¿Que haremos hoy?</Text>
-      <TouchableOpacity style={styles.button} onPress={() => alert("Buscar Recetas")}>
-        <Text style={styles.buttonText}>🔍 Buscar Recetas</Text>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("BuscarRecetas")}
+      >
+        <Text style={styles.buttonText}>BUSCAR RECETAS 🔍</Text>
       </TouchableOpacity>
-
-      <TouchableOpacity style={styles.buttonSecondary} onPress={() => alert("Crear Receta")}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("CrearReceta")}
+      >
         <Text style={styles.buttonText}>🍲 Crear Receta</Text>
       </TouchableOpacity>
     </ScreenContainer>
+  );
+}
+
+function BuscarRecetas() {
+  const [query, setQuery] = useState("");
+  const [recipes, setRecipes] = useState([]);
+
+  const searchRecipes = async () => {
+    try {
+      const response = await fetch(`${API_MEALDB}${query}`);
+      const data = await response.json();
+      setRecipes(data.meals || []);
+    } catch (error) {
+      console.error("Error al buscar recetas", error);
+    }
+  };
+
+  return (
+    <View style={styles.containerApi}>
+      <Text style={styles.title}>Buscar Recetas</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Ingresa un ingrediente"
+        value={query}
+        onChangeText={setQuery}
+      />
+      <TouchableOpacity style={styles.button} onPress={searchRecipes}>
+        <Text style={styles.buttonText}>🔍 Buscar</Text>
+      </TouchableOpacity>
+      <FlatList
+        data={recipes}
+        keyExtractor={(item) => item.idMeal}
+        renderItem={({ item }) => (
+          <View style={styles.recipeItem}>
+            <Text style={styles.recipeTitle}>{item.strMeal}</Text>
+            <Image source={{ uri: item.strMealThumb }} style={styles.recipeImage} />
+          </View>
+        )}
+      />
+    </View>
+  );
+}
+
+function CrearReceta() {
+  const [countries, setCountries] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    const fetchCountries = async () => {
+      try {
+        const response = await fetch(API_COUNTRIES);
+        const data = await response.json();
+        setCountries(data.map((country) => country.name.common));
+      } catch (error) {
+        console.error("Error al obtener países", error);
+      }
+    };
+    fetchCountries();
+  }, []);
+
+  const searchByCountry = async () => {
+    try {
+      const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${selectedCountry}`);
+      const data = await response.json();
+      setRecipes(data.meals || []);
+    } catch (error) {
+      console.error("Error al obtener recetas del país", error);
+    }
+  };
+
+  return (
+    <View style={styles.containerApi}>
+      <Text style={styles.title}>Buscar Recetas por País</Text>
+      <FlatList
+        data={countries}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <TouchableOpacity style={styles.button} onPress={() => { setSelectedCountry(item); searchByCountry(); }}>
+            <Text style={styles.buttonText}>{item}</Text>
+          </TouchableOpacity>
+        )}
+      />
+      <FlatList
+        data={recipes}
+        keyExtractor={(item) => item.idMeal}
+        renderItem={({ item }) => (
+          <View style={styles.recipeItem}>
+            <Text style={styles.recipeTitle}>{item.strMeal}</Text>
+            <Image source={{ uri: item.strMealThumb }} style={styles.recipeImage} />
+          </View>
+        )}
+      />
+    </View>
   );
 }
 
@@ -106,6 +208,8 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="BuscarRecetas" component={BuscarRecetas} />
+        <Stack.Screen name="CrearReceta" component={CrearReceta} />
       </Stack.Navigator>
     </NavigationContainer>
   );
