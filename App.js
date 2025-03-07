@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const API_MEALDB = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 const API_COUNTRIES = "https://restcountries.com/v3.1/all";
 
-// 🌟 Componente reutilizable para pantallas con imagen o color de fondo
+// 🌟 Componente reutilizable para pantallas con imagen o color de fondo pr
 const ScreenContainer = ({ children, background, backgroundColor }) => {
   if (background) {
     return (
