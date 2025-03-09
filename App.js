@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet, ImageBackground } from "react-native";
+import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet, ImageBackground, } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -50,15 +50,50 @@ function Inicio2({ navigation }) {
 
 // 🌟 Pantalla de Login (Con color de fondo específico)
 function Login({ navigation }) {
+
   return (
-    <ScreenContainer backgroundColor="#FAE5D3">
-      <Text style={styles.title}>Iniciar Sesión</Text>
+    <ScreenContainer background={require("./assets/background.jpg")}>
+      <Text style={styles.title}>¡Hola, chef! 👋</Text>
+      <Text style={styles.subtitle}>Tu próxima gran receta comienza aquí</Text>
+
+      <Text style={styles.label}>Email</Text>
       <TextInput style={styles.input} placeholder="Correo electrónico" keyboardType="email-address" />
+
+      <Text style={styles.label}>Password</Text>
       <TextInput style={styles.input} placeholder="Contraseña" secureTextEntry />
 
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Home")}>
         <Text style={styles.buttonText}>Iniciar Sesión</Text>
       </TouchableOpacity>
+
+      <View style={styles.socialButtonsContainer}>
+        <TouchableOpacity style={styles.rememberContainer}>
+          <View style={styles.checkbox}>
+            {/* Aquí puedes agregar el icono de check si está marcado */}
+          </View>
+          <Text style={styles.rememberText}>Recordar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.forgotContainer}>
+          <Text style={styles.forgotText}>¿Olvidaste tu contraseña?</Text>
+        </TouchableOpacity>
+      </View>
+
+
+
+      {/* Contenedor para los botones de redes sociales */}
+      <View style={styles.socialButtonsContainer}>
+        <TouchableOpacity style={styles.buttonRegistro}>
+          <Image source={require('./assets/Logo_facebook.png')} style={styles.icon} />
+          <Text style={styles.buttonText}>Facebook</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonRegistro}>
+          <Image source={require('./assets/Logo_google.png')} style={styles.icon} />
+          <Text style={styles.buttonText}>Correo</Text>
+        </TouchableOpacity>
+      </View>
+
+
+
     </ScreenContainer>
   );
 }
@@ -96,7 +131,7 @@ function Home({ navigation }) {
         style={styles.button}
         onPress={() => navigation.navigate("CrearReceta")}
       >
-        <Text style={styles.buttonText}>🍲 Crear Receta</Text>
+        <Text style={styles.buttonText}>🍲 CREAR RECETAS</Text>
       </TouchableOpacity>
     </ScreenContainer>
   );
@@ -223,6 +258,7 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   container: {
+
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
@@ -242,11 +278,68 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: "#555",
   },
+  label: {
+    textAlign: 'left',
+    fontWeight: 'bold',
+    fontSize: 16,
+    color: "#555",
+    marginBottom: 5,
+    alignSelf: 'flex-start',
+    marginLeft: 130,
+  },
+  rememberContainer: {
+    flexDirection: 'row',
+    alignItems: 'left',
+    marginHorizontal: 96,
+  },
+  checkbox: {
+    flexDirection: 'row',
+    width: 20,
+    height: 20,
+    borderWidth: 1,
+    borderColor: 'gray',
+    marginRight: 8,
+    borderRadius: 4,
+  },
+  rememberText: {
+    fontSize: 16,
+
+
+  },
+  forgotContainer: {
+    paddingVertical: 1,
+    alignSelf: 'flex-end',
+    marginHorizontal: 96,
+  },
+  forgotText: {
+    fontSize: 16,
+    color: 'blue', // Ajusta el color según sea necesario
+  },
+
+  socialButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between', // O usa 'space-around', 'space-evenly' o 'center' según tu preferencia
+    marginTop: 20, // Añade un margen superior para separar los botones del formulario
+  },
+  buttonRegistro: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: "#ff6f00",
+    borderRadius: 8,
+    padding: 12,
+    flex: 1, // Para que los botones ocupen el espacio disponible
+    marginHorizontal: 16, // Espacio entre los botones
+  },
+  icon: {
+    width: 24,
+    height: 24,
+    marginRight: 8,
+  },
   chefImage: {
     width: 150,
     height: 150,
     marginBottom: 20,
-    borderRadius: 75, 
+    borderRadius: 75,
     overflow: "hidden",
   },
   question: {
