@@ -1,0 +1,568 @@
+{
+  "usuarios": [
+    {
+      "usuario": "ejemplo1@gmail.com",
+      "contraseña": "123456",
+      "id": "864d"
+    },
+    {
+      "usuario": "ejemplo2@yahoo.com",
+      "contraseña": "abcdef",
+      "id": "e90e"
+    },
+    {
+      "usuario": "ejemplo3@hotmail.com",
+      "contraseña": "ghijkl",
+      "id": "c78f"
+    },
+    {
+      "usuario": "ejemplo4@outlook.com",
+      "contraseña": "mnopqr",
+      "id": "970a"
+    },
+    {
+      "usuario": "ejemplo5@icloud.com",
+      "contraseña": "stuvwx",
+      "id": "d3da"
+    }
+  ],
+  "recetas": [
+    {
+      "id": "1",
+      "nombre": "Ensalada de Quinoa y Aguacate actualizado put",
+      "imagen": "https://ejemplo.com/ensalada-quinoa.jpg",
+      "ingredientes": [
+        "Quinoa",
+        "tomate",
+        "pepino",
+        "aguacate",
+        "limón"
+      ],
+      "pasos": [
+        "Cocer la quinoa",
+        "Picar los vegetales",
+        "Mezclar todo"
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Tacos de Pollo",
+      "imagen": "https://ejemplo.com/tacos-pollo.jpg",
+      "ingredientes": [
+        "Tortillas",
+        "pechuga de pollo",
+        "cebolla",
+        "cilantro",
+        "salsa",
+        "limón"
+      ],
+      "pasos": [
+        "Cocinar el pollo",
+        "Calentar las tortillas",
+        "Armar los tacos con los ingredientes"
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Pasta al Pesto",
+      "imagen": "https://ejemplo.com/pasta-pesto.jpg",
+      "ingredientes": [
+        "Pasta",
+        "albahaca",
+        "piñones",
+        "ajo",
+        "queso parmesano",
+        "aceite de oliva"
+      ],
+      "pasos": [
+        "Cocer la pasta",
+        "Triturar los ingredientes del pesto",
+        "Mezclar la pasta con el pesto"
+      ]
+    },
+    {
+      "id": "4",
+      "nombre": "Sushi",
+      "imagen": "https://ejemplo.com/sushi.jpg",
+      "ingredientes": [
+        "Arroz",
+        "algas nori",
+        "pescado",
+        "aguacate",
+        "vinagre",
+        "azúcar",
+        "sal"
+      ],
+      "pasos": [
+        "Cocer el arroz",
+        "Preparar el pescado",
+        "Enrollar el sushi con los ingredientes"
+      ]
+    },
+    {
+      "id": "5",
+      "nombre": "Brownies",
+      "imagen": "https://ejemplo.com/brownies.jpg",
+      "ingredientes": [
+        "Chocolate",
+        "mantequilla",
+        "azúcar",
+        "huevos",
+        "harina",
+        "nueces"
+      ],
+      "pasos": [
+        "Derretir el chocolate y la mantequilla",
+        "Mezclar con el azúcar y los huevos",
+        "Agregar la harina y las nueces",
+        "Hornear"
+      ]
+    },
+    {
+      "id": "6",
+      "nombre": "Sopa de Lentejas",
+      "imagen": "https://ejemplo.com/sopa-lentejas.jpg",
+      "ingredientes": [
+        "Lentejas",
+        "zanahoria",
+        "cebolla",
+        "apio",
+        "caldo de verduras",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cocer las lentejas",
+        "Picar y sofreír las verduras",
+        "Agregar las lentejas y el caldo",
+        "Cocinar hasta que las verduras estén tiernas"
+      ]
+    },
+    {
+      "id": "7",
+      "nombre": "Ensalada de Quinoa con Limón patch",
+      "imagen": "https://ejemplo.com/pizza-casera.jpg",
+      "ingredientes": [
+        "Masa de pizza",
+        "salsa de tomate",
+        "queso",
+        "ingredientes al gusto"
+      ],
+      "pasos": [
+        "Extender la masa",
+        "Agregar la salsa y el queso",
+        "Colocar los ingredientes deseados",
+        "Hornear hasta que el queso esté derretido"
+      ]
+    },
+    {
+      "id": "8",
+      "nombre": "Tortilla Española",
+      "imagen": "https://ejemplo.com/tortilla-espanola.jpg",
+      "ingredientes": [
+        "Huevos",
+        "patatas",
+        "cebolla",
+        "sal",
+        "aceite"
+      ],
+      "pasos": [
+        "Cocer las patatas",
+        "Picar y sofreír la cebolla",
+        "Batir los huevos y mezclar con las patatas y la cebolla",
+        "Cocinar en una sartén hasta que esté cuajada"
+      ]
+    },
+    {
+      "id": "9",
+      "nombre": "Galletas de Avena",
+      "imagen": "https://ejemplo.com/galletas-avena.jpg",
+      "ingredientes": [
+        "Avena",
+        "azúcar",
+        "mantequilla",
+        "huevos",
+        "harina",
+        "chocolate chips"
+      ],
+      "pasos": [
+        "Mezclar todos los ingredientes",
+        "Formar las galletas",
+        "Hornear hasta que estén doradas"
+      ]
+    },
+    {
+      "id": "10",
+      "nombre": "Pollo al Curry",
+      "imagen": "https://ejemplo.com/pollo-curry.jpg",
+      "ingredientes": [
+        "Pechuga de pollo",
+        "curry en polvo",
+        "leche de coco",
+        "cebolla",
+        "ajo",
+        "aceite",
+        "sal"
+      ],
+      "pasos": [
+        "Cortar y dorar el pollo",
+        "Sofreír la cebolla y el ajo",
+        "Agregar el pollo y el curry",
+        "Incorporar la leche de coco y cocinar hasta que el pollo esté tierno"
+      ]
+    },
+    {
+      "id": "12",
+      "nombre": "Lasagna",
+      "imagen": "https://ejemplo.com/lasagna.jpg",
+      "ingredientes": [
+        "Placas de lasagna",
+        "carne molida",
+        "salsa de tomate",
+        "queso",
+        "cebolla",
+        "ajo",
+        "sal"
+      ],
+      "pasos": [
+        "Cocinar la carne con la cebolla y el ajo",
+        "Intercalar capas de pasta, carne y queso en una bandeja",
+        "Hornear hasta que esté dorada"
+      ]
+    },
+    {
+      "id": "13",
+      "nombre": "Salmón a la Plancha",
+      "imagen": "https://ejemplo.com/salmon-plancha.jpg",
+      "ingredientes": [
+        "Filete de salmón",
+        "sal",
+        "pimienta",
+        "limón",
+        "aceite"
+      ],
+      "pasos": [
+        "Sazonar el salmón",
+        "Cocinar en la plancha con un poco de aceite",
+        "Servir con limón"
+      ]
+    },
+    {
+      "id": "14",
+      "nombre": "Pancakes",
+      "imagen": "https://ejemplo.com/pancakes.jpg",
+      "ingredientes": [
+        "Harina",
+        "huevos",
+        "leche",
+        "azúcar",
+        "polvo de hornear",
+        "sal"
+      ],
+      "pasos": [
+        "Mezclar todos los ingredientes",
+        "Cocinar en una sartén caliente",
+        "Servir con miel o sirope"
+      ]
+    },
+    {
+      "id": "15",
+      "nombre": "Enchiladas",
+      "imagen": "https://ejemplo.com/enchiladas.jpg",
+      "ingredientes": [
+        "Tortillas",
+        "pollo deshebrado",
+        "salsa de enchilada",
+        "queso",
+        "crema",
+        "cebolla"
+      ],
+      "pasos": [
+        "Rellenar las tortillas con el pollo",
+        "Enrollar y colocar en un plato",
+        "Cubrir con la salsa y el queso",
+        "Hornear hasta que el queso esté derretido"
+      ]
+    },
+    {
+      "id": "16",
+      "nombre": "Burgers",
+      "imagen": "https://ejemplo.com/burgers.jpg",
+      "ingredientes": [
+        "Carne molida",
+        "pan de hamburguesa",
+        "queso",
+        "lechuga",
+        "tomate",
+        "cebolla",
+        "salsa"
+      ],
+      "pasos": [
+        "Formar la carne en forma de hamburguesa",
+        "Cocinar en la parrilla",
+        "Armar la hamburguesa con los ingredientes"
+      ]
+    },
+    {
+      "id": "17",
+      "nombre": "Crepes",
+      "imagen": "https://ejemplo.com/crepes.jpg",
+      "ingredientes": [
+        "Harina",
+        "huevos",
+        "leche",
+        "azúcar",
+        "sal"
+      ],
+      "pasos": [
+        "Mezclar todos los ingredientes",
+        "Cocinar en una sartén caliente",
+        "Rellenar con lo que desees"
+      ]
+    },
+    {
+      "id": "18",
+      "nombre": "Ceviche",
+      "imagen": "https://ejemplo.com/ceviche.jpg",
+      "ingredientes": [
+        "Pescado",
+        "limón",
+        "cebolla",
+        "cilantro",
+        "sal"
+      ],
+      "pasos": [
+        "Marinar el pescado en limón",
+        "Agregar la cebolla y el cilantro",
+        "Servir frío"
+      ]
+    },
+    {
+      "id": "19",
+      "nombre": "Mousse de Chocolate",
+      "imagen": "https://ejemplo.com/mousse-chocolate.jpg",
+      "ingredientes": [
+        "Chocolate",
+        "huevos",
+        "azúcar",
+        "nata",
+        "sal"
+      ],
+      "pasos": [
+        "Derretir el chocolate",
+        "Batir las claras a punto de nieve",
+        "Mezclar todo y refrigerar"
+      ]
+    },
+    {
+      "id": "20",
+      "nombre": "Sopa de Tomate",
+      "imagen": "https://ejemplo.com/sopa-tomate.jpg",
+      "ingredientes": [
+        "Tomates",
+        "cebolla",
+        "ajo",
+        "caldo",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cocer los tomates con la cebolla y el ajo",
+        "Triturar y colar",
+        "Servir caliente"
+      ]
+    },
+    {
+      "id": "21",
+      "nombre": "Pollo Asado",
+      "imagen": "https://ejemplo.com/pollo-asado.jpg",
+      "ingredientes": [
+        "Pollo",
+        "sal",
+        "pimienta",
+        "ajo",
+        "limón"
+      ],
+      "pasos": [
+        "Sazonar el pollo",
+        "Asar en el horno hasta que esté dorado"
+      ]
+    },
+    {
+      "id": "22",
+      "nombre": "Tarta de Manzana",
+      "imagen": "https://ejemplo.com/tarta-manzana.jpg",
+      "ingredientes": [
+        "Masa de tarta",
+        "manzanas",
+        "azúcar",
+        "canela",
+        "mantequilla"
+      ],
+      "pasos": [
+        "Forrar un molde con la masa",
+        "Rellenar con las manzanas",
+        "Espolvorear con azúcar y canela",
+        "Hornear hasta que esté dorada"
+      ]
+    },
+    {
+      "id": "23",
+      "nombre": "Curry de Verduras",
+      "imagen": "https://ejemplo.com/curry-verduras.jpg",
+      "ingredientes": [
+        "Verduras",
+        "curry en polvo",
+        "leche de coco",
+        "cebolla",
+        "ajo",
+        "aceite",
+        "sal"
+      ],
+      "pasos": [
+        "Sofreír la cebolla y el ajo",
+        "Agregar las verduras y el curry",
+        "Incorporar la leche de coco y cocinar hasta que las verduras estén tiernas"
+      ]
+    },
+    {
+      "id": "24",
+      "nombre": "Pimientos Rellenos",
+      "imagen": "https://ejemplo.com/pimientos-rellenos.jpg",
+      "ingredientes": [
+        "Pimientos",
+        "carne",
+        "arroz",
+        "salsa de tomate",
+        "queso"
+      ],
+      "pasos": [
+        "Cocer el arroz",
+        "Rellenar los pimientos con la mezcla",
+        "Cubrir con salsa y queso",
+        "Hornear hasta que estén tiernos"
+      ]
+    },
+    {
+      "id": "25",
+      "nombre": "Sushi de Verduras",
+      "imagen": "https://ejemplo.com/sushi-verduras.jpg",
+      "ingredientes": [
+        "Arroz",
+        "algas nori",
+        "verduras",
+        "vinagre",
+        "azúcar",
+        "sal"
+      ],
+      "pasos": [
+        "Cocer el arroz",
+        "Picar las verduras",
+        "Enrollar el sushi con los ingredientes"
+      ]
+    },
+    {
+      "id": "26",
+      "nombre": "Pasta con Salsa Alfredo",
+      "imagen": "https://ejemplo.com/pasta-alfredo.jpg",
+      "ingredientes": [
+        "Pasta",
+        "nata",
+        "queso",
+        "mantequilla",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cocer la pasta",
+        "Calentar la nata con el queso y la mantequilla",
+        "Mezclar con la pasta"
+      ]
+    },
+    {
+      "id": "27",
+      "nombre": "Tacos de Pescado",
+      "imagen": "https://ejemplo.com/tacos-pescado.jpg",
+      "ingredientes": [
+        "Tortillas",
+        "pescado",
+        "cabbage",
+        "salsa",
+        "limón"
+      ],
+      "pasos": [
+        "Cocinar el pescado",
+        "Calentar las tortillas",
+        "Armar los tacos con los ingredientes"
+      ]
+    },
+    {
+      "id": "28",
+      "nombre": "Brownies de Chocolate Blanco",
+      "imagen": "https://ejemplo.com/brownies-chocolate-blanco.jpg",
+      "ingredientes": [
+        "Chocolate blanco",
+        "mantequilla",
+        "azúcar",
+        "huevos",
+        "harina",
+        "nueces"
+      ],
+      "pasos": [
+        "Derretir el chocolate y la mantequilla",
+        "Mezclar con el azúcar y los huevos",
+        "Agregar la harina y las nueces",
+        "Hornear"
+      ]
+    },
+    {
+      "id": "29",
+      "nombre": "Ensalada César",
+      "imagen": "https://ejemplo.com/ensalada-cesar.jpg",
+      "ingredientes": [
+        "Lechuga",
+        "pollo",
+        "crutones",
+        "queso",
+        "salsa César"
+      ],
+      "pasos": [
+        "Cocer el pollo",
+        "Mezclar todos los ingredientes",
+        "Servir frío"
+      ]
+    },
+    {
+      "id": "30",
+      "nombre": "Pizza de Pepperoni",
+      "imagen": "https://ejemplo.com/pizza-pepperoni.jpg",
+      "ingredientes": [
+        "Masa de pizza",
+        "salsa de tomate",
+        "queso",
+        "pepperoni"
+      ],
+      "pasos": [
+        "Extender la masa",
+        "Agregar la salsa y el queso",
+        "Colocar el pepperoni",
+        "Hornear hasta que el queso esté derretido"
+      ]
+    },
+    {
+      "id": "19f2",
+      "nombre": "Esto es una prueba",
+      "imagen": "https://ejemplo.com/pasta-pesto.jpg",
+      "ingredientes": [
+        "Pasta",
+        "albahaca",
+        "queso parmesano"
+      ],
+      "pasos": [
+        "Cocer la pasta",
+        "Hacer el pesto",
+        "Mezclar todo"
+      ]
+    }
+  ]
+}
