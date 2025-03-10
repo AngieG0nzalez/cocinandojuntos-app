@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet, ImageBackground, } from "react-native";
+import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet, ImageBackground, ScrollView, } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -127,15 +127,68 @@ function Home({ navigation }) {
       >
         <Text style={styles.buttonText}>BUSCAR RECETAS 🔍</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("CrearReceta")}
-      >
-        <Text style={styles.buttonText}>🍲 CREAR RECETAS</Text>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("CrearReceta")}>
+        <Text style={styles.buttonText}>CREAR RECETAS</Text>
       </TouchableOpacity>
     </ScreenContainer>
   );
 }
+
+
+
+function CrearReceta({ navigation }) {
+  return (
+    <ScreenContainer backgroundColor="#FAE5D3">
+      <ScrollView style={styles.containerScroll}>
+      <View style={styles.container}>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Nombre de la receta</Text>
+        <TextInput style={styles.input} placeholder="Escribe el nombre" />
+      </View>
+
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Ingredientes</Text>
+        <TextInput style={styles.input} placeholder="Escribe los ingredientes" multiline />
+      </View>
+
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Preparación</Text>
+        <TextInput style={styles.input} placeholder="Escribe la preparación" multiline />
+      </View>
+
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Subir video</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Subir imagen</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+
+      </ScrollView>
+
+
+      <View style={styles.recuadro}>
+        <TouchableOpacity style={styles.buttonMenu}>
+          <Image source={require("./assets/menu.gif")} style={styles.icon} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonBuscar}>
+          <Image source={require("./assets/icono_buscar.png")} style={styles.icon} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonSalida}>
+          <Image source={require("./assets/icons_salida.gif")} style={styles.icon} />
+        </TouchableOpacity>
+      </View>
+
+
+
+    </ScreenContainer>
+  );
+}
+
+
 
 function BuscarRecetas() {
   const [query, setQuery] = useState("");
@@ -177,60 +230,6 @@ function BuscarRecetas() {
   );
 }
 
-function CrearReceta() {
-  const [countries, setCountries] = useState([]);
-  const [selectedCountry, setSelectedCountry] = useState("");
-  const [recipes, setRecipes] = useState([]);
-
-  useEffect(() => {
-    const fetchCountries = async () => {
-      try {
-        const response = await fetch(API_COUNTRIES);
-        const data = await response.json();
-        setCountries(data.map((country) => country.name.common));
-      } catch (error) {
-        console.error("Error al obtener países", error);
-      }
-    };
-    fetchCountries();
-  }, []);
-
-  const searchByCountry = async () => {
-    try {
-      const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${selectedCountry}`);
-      const data = await response.json();
-      setRecipes(data.meals || []);
-    } catch (error) {
-      console.error("Error al obtener recetas del país", error);
-    }
-  };
-
-  return (
-    <View style={styles.containerApi}>
-      <Text style={styles.title}>Buscar Recetas por País</Text>
-      <FlatList
-        data={countries}
-        keyExtractor={(item) => item}
-        renderItem={({ item }) => (
-          <TouchableOpacity style={styles.button} onPress={() => { setSelectedCountry(item); searchByCountry(); }}>
-            <Text style={styles.buttonText}>{item}</Text>
-          </TouchableOpacity>
-        )}
-      />
-      <FlatList
-        data={recipes}
-        keyExtractor={(item) => item.idMeal}
-        renderItem={({ item }) => (
-          <View style={styles.recipeItem}>
-            <Text style={styles.recipeTitle}>{item.strMeal}</Text>
-            <Image source={{ uri: item.strMealThumb }} style={styles.recipeImage} />
-          </View>
-        )}
-      />
-    </View>
-  );
-}
-
 // Configuración de la Navegación
 const Stack = createNativeStackNavigator();
 
@@ -243,8 +242,9 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="BuscarRecetas" component={BuscarRecetas} />
         <Stack.Screen name="CrearReceta" component={CrearReceta} />
+        <Stack.Screen name="BuscarRecetas" component={BuscarRecetas} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -384,5 +384,56 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
     fontSize: 16,
+  },
+  containerScroll: {
+    flex: 1,
+  },
+  text: {
+    fontSize: 20,
+    padding: 10,
+  },
+
+
+  recuadro: {
+    position: 'absolute', // Posiciona el recuadro de forma absoluta
+    bottom: 0, // Lo coloca en la parte inferior
+    left: 0, // Lo alinea al borde izquierdo
+    right: 0, // Lo alinea al borde derecho
+    backgroundColor: "#ff6f00", // Color de fondo gris claro
+    padding: 20, // Añade relleno interno
+    alignItems: 'center', // Centra el contenido horizontalmente
+    justifyContent: 'center', // Centra el contenido verticalmente
+  },
+  texto: {
+    fontSize: 16,
+  },
+  //stilo de botones de navegacion
+  recuadro: {
+    position: 'absolute', // Posiciona el recuadro de forma absoluta
+    bottom: 0, // Lo coloca en la parte inferior
+    left: 0, // Lo alinea al borde izquierdo
+    right: 0, // Lo alinea al borde derecho
+    backgroundColor: "#ff6f00", // Color de fondo gris claro
+    padding: 5, // Añade relleno interno
+    alignItems: 'center', // Centra el contenido horizontalmente
+    flexDirection: 'row', // Coloca los botones horizontalmente
+    justifyContent: 'space-around', // Distribuye el espacio entre los botones
+    paddingHorizontal: 20, // Añade un poco de relleno horizontal
+  },
+  buttonMenu: {
+    padding: 10,
+  },
+  texto: {
+    fontSize: 16,
+  },
+  buttonBuscar: {
+    padding: 10,
+  },
+  buttonSalida: {
+    padding: 10,
+  },
+  icon: {
+    width: 30, // Ajusta el tamaño del icono según sea necesario
+    height: 30, // Ajusta el tamaño del icono según sea necesario
   },
 });
