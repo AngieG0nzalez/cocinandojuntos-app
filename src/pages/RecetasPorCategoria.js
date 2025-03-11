@@ -32,7 +32,7 @@ const RecetasPorCategoria = ({ navigation, route }) => {
           setRecetas([]);
         }
         console.log("🚀 ~ fetchRecetas ~ response:", response);
-        console.log("🚀 ~ fetchRecetas ~ categoriasUnicas:", categoriasUnicas);
+        
       } catch (error) {
         console.error("Error al cargar recetas:", error);
       }
