@@ -6,8 +6,8 @@ import ScreenContainer from "../components/ScreenContainer";
 
 const Inicio2 = ({ navigation }) => {
   return (
-    <ScreenContainer backgroundColor="#f8f8f8">
-      <Text style={globalStyles.title}>¡Descubre nuevas recetas cada día!</Text>
+    <ScreenContainer background={require("../assets/background.jpg")}>
+      <Text style={globalStyles.title}>Regístrate y accede a recetas irresistibles solo para ti.</Text>
       <TouchableOpacity style={globalStyles.button} onPress={() => navigation.navigate("Login")}>
         <Text style={globalStyles.buttonText}>Iniciar Sesión</Text>
       </TouchableOpacity>

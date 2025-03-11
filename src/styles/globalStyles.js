@@ -2,25 +2,62 @@ import { StyleSheet } from "react-native";
 
 const globalStyles = StyleSheet.create({
   container: {
+    width: "100%",
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
   },
   title: {
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
-    color: "#333",
+    color: "#FFFFFF",
+    fontfamily: "cursive",
+    textShadowColor: "#000000",
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
+    letterSpacing: 1.5,
   },
   subtitle: {
-    fontSize: 18,
+    fontSize: 40,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
-    color: "#555",
+    color: "#FFFFFF",
+    fontfamily: "cursive",
+    textShadowColor: "#000000",
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
+    letterSpacing: 1.5,
   },
+
+  title1: {
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 20,
+    color: "#FFFFFF",
+    fontfamily: "cursive",
+    textShadowColor: "#000000",
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
+    letterSpacing: 1.5,
+  },
+  subtitle1: {
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 20,
+    color: "#FFFFFF",
+    fontfamily: "cursive",
+    textShadowColor: "#000000",
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
+    letterSpacing: 1.5,
+  },
+
   label: {
     textAlign: "left",
     fontWeight: "bold",
@@ -53,12 +90,13 @@ const globalStyles = StyleSheet.create({
   },
   forgotText: {
     fontSize: 16,
-    color: "blue", // Ajusta el color según sea necesario
+    color: "black", // Ajusta el color según sea necesario
   },
   socialButtonsContainer: {
     flexDirection: "row",
     justifyContent: "space-between", // Ajusta la distribución según prefieras
-    marginTop: 20,
+    width: "100%",
+    marginVertical: 15,
   },
   buttonRegistro: {
     flexDirection: "row",
@@ -128,6 +166,92 @@ const globalStyles = StyleSheet.create({
     flex: 1,
     width: "100%",
     height: "100%",
+  },
+  chefImg: {
+    borderRadius: 20, // Bordes redondeados
+    padding: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    width: 150, // Ajuste de tamaño
+    height: 150,
+  },
+  bottomMenu: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    backgroundColor: "#FF7300",
+    paddingVertical: 10,
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+  },
+  card1: {
+    width: "100%",
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    padding: 10,
+    marginVertical: 8,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    elevation: 3, // Sombra en Android
+  },
+  card2: {
+    width: "50%",
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    padding: 10,
+    marginVertical: 8,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    elevation: 3, // Sombra en Android
+  },
+  cardImage: {
+    width: 100, // Ajusta según tu diseño
+    height: 100, // Ajusta según tu diseño
+    borderRadius: 8,
+    marginBottom: 8,
+  },
+  cardTitle: {
+    fontSize: 16,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  containerDetail: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#F5E3D8",
+  },
+  titleDetail: {
+    fontSize: 24,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginVertical: 10,
+  },
+  subtitleDetail: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 15,
+  },
+  bulletDetail: {
+    fontSize: 16,
+    marginLeft: 10,
+  },
+  numberedDetail: {
+    fontSize: 16,
+    marginLeft: 10,
+    marginBottom: 5,
+  },
+  imageDetail: {
+    width: "100%",
+    height: 200,
+    resizeMode: "cover",
+    borderRadius: 10,
+    marginBottom: 10,
   },
 });
 

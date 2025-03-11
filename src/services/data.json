@@ -29,25 +29,9 @@
   "recetas": [
     {
       "id": "1",
-      "nombre": "Ensalada de Quinoa y Aguacate actualizado put",
-      "imagen": "https://ejemplo.com/ensalada-quinoa.jpg",
-      "ingredientes": [
-        "Quinoa",
-        "tomate",
-        "pepino",
-        "aguacate",
-        "limón"
-      ],
-      "pasos": [
-        "Cocer la quinoa",
-        "Picar los vegetales",
-        "Mezclar todo"
-      ]
-    },
-    {
-      "id": "2",
+      "categoria": "pollo",
       "nombre": "Tacos de Pollo",
-      "imagen": "https://ejemplo.com/tacos-pollo.jpg",
+      "imagen": "https://imag.bonviveur.com/tacos-de-pollo.jpg",
       "ingredientes": [
         "Tortillas",
         "pechuga de pollo",
@@ -63,138 +47,10 @@
       ]
     },
     {
-      "id": "3",
-      "nombre": "Pasta al Pesto",
-      "imagen": "https://ejemplo.com/pasta-pesto.jpg",
-      "ingredientes": [
-        "Pasta",
-        "albahaca",
-        "piñones",
-        "ajo",
-        "queso parmesano",
-        "aceite de oliva"
-      ],
-      "pasos": [
-        "Cocer la pasta",
-        "Triturar los ingredientes del pesto",
-        "Mezclar la pasta con el pesto"
-      ]
-    },
-    {
-      "id": "4",
-      "nombre": "Sushi",
-      "imagen": "https://ejemplo.com/sushi.jpg",
-      "ingredientes": [
-        "Arroz",
-        "algas nori",
-        "pescado",
-        "aguacate",
-        "vinagre",
-        "azúcar",
-        "sal"
-      ],
-      "pasos": [
-        "Cocer el arroz",
-        "Preparar el pescado",
-        "Enrollar el sushi con los ingredientes"
-      ]
-    },
-    {
-      "id": "5",
-      "nombre": "Brownies",
-      "imagen": "https://ejemplo.com/brownies.jpg",
-      "ingredientes": [
-        "Chocolate",
-        "mantequilla",
-        "azúcar",
-        "huevos",
-        "harina",
-        "nueces"
-      ],
-      "pasos": [
-        "Derretir el chocolate y la mantequilla",
-        "Mezclar con el azúcar y los huevos",
-        "Agregar la harina y las nueces",
-        "Hornear"
-      ]
-    },
-    {
-      "id": "6",
-      "nombre": "Sopa de Lentejas",
-      "imagen": "https://ejemplo.com/sopa-lentejas.jpg",
-      "ingredientes": [
-        "Lentejas",
-        "zanahoria",
-        "cebolla",
-        "apio",
-        "caldo de verduras",
-        "sal",
-        "pimienta"
-      ],
-      "pasos": [
-        "Cocer las lentejas",
-        "Picar y sofreír las verduras",
-        "Agregar las lentejas y el caldo",
-        "Cocinar hasta que las verduras estén tiernas"
-      ]
-    },
-    {
-      "id": "7",
-      "nombre": "Ensalada de Quinoa con Limón patch",
-      "imagen": "https://ejemplo.com/pizza-casera.jpg",
-      "ingredientes": [
-        "Masa de pizza",
-        "salsa de tomate",
-        "queso",
-        "ingredientes al gusto"
-      ],
-      "pasos": [
-        "Extender la masa",
-        "Agregar la salsa y el queso",
-        "Colocar los ingredientes deseados",
-        "Hornear hasta que el queso esté derretido"
-      ]
-    },
-    {
-      "id": "8",
-      "nombre": "Tortilla Española",
-      "imagen": "https://ejemplo.com/tortilla-espanola.jpg",
-      "ingredientes": [
-        "Huevos",
-        "patatas",
-        "cebolla",
-        "sal",
-        "aceite"
-      ],
-      "pasos": [
-        "Cocer las patatas",
-        "Picar y sofreír la cebolla",
-        "Batir los huevos y mezclar con las patatas y la cebolla",
-        "Cocinar en una sartén hasta que esté cuajada"
-      ]
-    },
-    {
-      "id": "9",
-      "nombre": "Galletas de Avena",
-      "imagen": "https://ejemplo.com/galletas-avena.jpg",
-      "ingredientes": [
-        "Avena",
-        "azúcar",
-        "mantequilla",
-        "huevos",
-        "harina",
-        "chocolate chips"
-      ],
-      "pasos": [
-        "Mezclar todos los ingredientes",
-        "Formar las galletas",
-        "Hornear hasta que estén doradas"
-      ]
-    },
-    {
-      "id": "10",
+      "id": "2",
+      "categoria": "pollo",
       "nombre": "Pollo al Curry",
-      "imagen": "https://ejemplo.com/pollo-curry.jpg",
+      "imagen": "https://i.blogs.es/8c3360/pollo_curry/450_1000.jpg",
       "ingredientes": [
         "Pechuga de pollo",
         "curry en polvo",
@@ -212,9 +68,357 @@
       ]
     },
     {
+      "id": "3",
+      "categoria": "pollo",
+      "nombre": "Pollo Asado",
+      "imagen": "https://www.elespectador.com/resizer/v2/2F4WF2CH7BC4DCCLMRBGS34KVQ.jpg?auth=744477b0610366720bbeeb9f3515ec384550475a1f106e81ab1d356c88294960&width=920&height=613&smart=true&quality=60",
+      "ingredientes": [
+        "Pollo entero",
+        "ajo",
+        "romero",
+        "sal",
+        "pimienta",
+        "aceite de oliva"
+      ],
+      "pasos": [
+        "Marinar el pollo con ajo y romero",
+        "Hornear a 180°C por 1 hora"
+      ]
+    },
+    {
+      "id": "4",
+      "categoria": "pollo",
+      "nombre": "Pollo a la Parrilla",
+      "imagen": "https://assets.unileversolutions.com/v1/799195.jpg",
+      "ingredientes": [
+        "Pechuga de pollo",
+        "aceite de oliva",
+        "sal",
+        "pimienta",
+        "limón"
+      ],
+      "pasos": [
+        "Sazonar el pollo",
+        "Calentar la parrilla",
+        "Cocinar el pollo hasta que esté dorado"
+      ]
+    },
+    {
+      "id": "5",
+      "categoria": "pollo",
+      "nombre": "Pollo al Horno con Patatas",
+      "imagen": "https://www.lacocinadelila.com/wp-content/uploads/2014/01/pollo-al-horno-con-patatas-600x450.jpg",
+      "ingredientes": [
+        "Pollo",
+        "patatas",
+        "cebolla",
+        "aceite de oliva",
+        "romero",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cortar las patatas y la cebolla",
+        "Colocar en una bandeja con el pollo",
+        "Hornear a 200°C por 45 minutos"
+      ]
+    },
+    {
+      "id": "6",
+      "categoria": "pollo",
+      "nombre": "Pollo Teriyaki",
+      "imagen": "https://cocinista.b-cdn.net/download/bancorecursos/recetas/receta-muslos-pollo-teriyaki-glaseadas.jpg",
+      "ingredientes": [
+        "Pechuga de pollo",
+        "salsa teriyaki",
+        "miel",
+        "ajo",
+        "jengibre",
+        "aceite de sésamo"
+      ],
+      "pasos": [
+        "Marinar el pollo en la salsa teriyaki",
+        "Cocinar en sartén hasta que esté dorado",
+        "Servir con arroz"
+      ]
+    },
+    {
+      "id": "7",
+      "categoria": "pollo",
+      "nombre": "Pollo al Limón",
+      "imagen": "https://polloseldorado.co/wp-content/uploads/2023/09/pollo-al-limon-portada.jpg",
+      "ingredientes": [
+        "Pechuga de pollo",
+        "limón",
+        "mantequilla",
+        "ajo",
+        "perejil",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cocinar el pollo en mantequilla",
+        "Agregar el jugo de limón y el ajo",
+        "Espolvorear con perejil"
+      ]
+    },
+    {
+      "id": "8",
+      "categoria": "pollo",
+      "nombre": "Pollo al Ajillo",
+      "imagen": "/medias/publicuploads/2014/05/19/74995/fra9ul052ygce7k8yu30.jpg",
+      "ingredientes": [
+        "Pechuga de pollo",
+        "ajo",
+        "aceite de oliva",
+        "vino blanco",
+        "perejil",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Dorar el pollo en aceite",
+        "Agregar el ajo y el vino blanco",
+        "Cocinar hasta que el pollo esté tierno"
+      ]
+    },
+    {
+      "id": "9",
+      "categoria": "pollo",
+      "nombre": "Pollo Frito",
+      "imagen": "https://assets.unileversolutions.com/recipes-v2/247780.jpg",
+      "ingredientes": [
+        "Pollo",
+        "harina",
+        "huevo",
+        "pan rallado",
+        "aceite",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Rebozar el pollo",
+        "Freír en aceite caliente",
+        "Servir con salsa"
+      ]
+    },
+    {
+      "id": "10",
+      "categoria": "pollo",
+      "nombre": "Pollo al Vino",
+      "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Receta-de-pollo-al-vino.jpg",
+      "ingredientes": [
+        "Pollo",
+        "vino tinto",
+        "cebolla",
+        "zanahoria",
+        "tomate",
+        "ajo",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Dorar el pollo",
+        "Agregar las verduras y el vino",
+        "Cocinar a fuego lento hasta que el pollo esté tierno"
+      ]
+    },
+    {
+      "id": "11",
+      "categoria": "pescado_mariscos",
+      "nombre": "Sushi",
+      "imagen": "https://www.lavanguardia.com/uploads/2019/10/15/5e9977d4903ac.jpeg",
+      "ingredientes": [
+        "Arroz",
+        "algas nori",
+        "pescado",
+        "aguacate",
+        "vinagre",
+        "azúcar",
+        "sal"
+      ],
+      "pasos": [
+        "Cocer el arroz",
+        "Preparar el pescado",
+        "Enrollar el sushi con los ingredientes"
+      ]
+    },
+    {
       "id": "12",
+      "categoria": "pescado_mariscos",
+      "nombre": "Ceviche",
+      "imagen": "https://elfaromercadodelmar.com.co/wp-content/uploads/2020/06/Ensalada-de-espinaca-y-camaron.jpg",
+      "ingredientes": [
+        "Pescado fresco",
+        "limón",
+        "cebolla",
+        "cilantro",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cortar el pescado en cubos",
+        "Mezclar con el jugo de limón y los demás ingredientes",
+        "Dejar reposar"
+      ]
+    },
+    {
+      "id": "13",
+      "categoria": "pescado_mariscos",
+      "nombre": "Pescado al Horno",
+      "imagen": "https://comedera.com/wp-content/uploads/sites/9/2022/02/pescado-al-horno-shutterstock_1919784281.jpg?resize=360,202&quality=80",
+      "ingredientes": [
+        "Filete de pescado",
+        "limón",
+        "ajo",
+        "perejil",
+        "aceite de oliva",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Sazonar el pescado",
+        "Colocar en una bandeja",
+        "Hornear a 180°C por 20 minutos"
+      ]
+    },
+    {
+      "id": "14",
+      "categoria": "pescado_mariscos",
+      "nombre": "Paella de Mariscos",
+      "imagen": "https://chefeel.com/chefgeneralfiles/2021/11/paellavalenciana-scaled-880x722.jpg",
+      "ingredientes": [
+        "Arroz",
+        "calamar",
+        "mejillones",
+        "gambas",
+        "caldo de pescado",
+        "azafrán",
+        "cebolla",
+        "tomate"
+      ],
+      "pasos": [
+        "Sofreír las verduras",
+        "Agregar el arroz y el caldo",
+        "Cocinar hasta que el arroz esté listo"
+      ]
+    },
+    {
+      "id": "15",
+      "categoria": "pescado_mariscos",
+      "nombre": "Camarones al Ajillo",
+      "imagen": "https://cdn0.recetasgratis.net/es/posts/2/2/3/camarones_al_ajillo_facil_7322_600.jpg",
+      "ingredientes": [
+        "Camarones",
+        "ajo",
+        "aceite de oliva",
+        "perejil",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Dorar el ajo en aceite",
+        "Agregar los camarones",
+        "Cocinar hasta que estén rosados"
+      ]
+    },
+    {
+      "id": "16",
+      "categoria": "pescado_mariscos",
+      "nombre": "Salmón a la Plancha",
+      "imagen": "https://www.paulinacocina.net/wp-content/uploads/2022/07/receta-de-salmon-a-la-plancha-con-salsa-agridulce.jpg",
+      "ingredientes": [
+        "Filete de salmón",
+        "limón",
+        "eneldo",
+        "aceite de oliva",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Sazonar el salmón",
+        "Cocinar en una plancha caliente",
+        "Servir con limón y eneldo"
+      ]
+    },
+    {
+      "id": "17",
+      "categoria": "pescado_mariscos",
+      "nombre": "Bacalao al Pil Pil",
+      "imagen": "https://content-cocina.lecturas.com/medio/2018/07/19/paso-a-paso-para-realizar-bacalao-al-pilpil-resultado-final_5e89756a_800x800.jpg",
+      "ingredientes": [
+        "Bacalao",
+        "aceite de oliva",
+        "ajo",
+        "guindilla",
+        "sal"
+      ],
+      "pasos": [
+        "Cocinar el bacalao en aceite",
+        "Agregar el ajo y la guindilla",
+        "Servir caliente"
+      ]
+    },
+    {
+      "id": "18",
+      "categoria": "pescado_mariscos",
+      "nombre": "Calamares a la Romana",
+      "imagen": "https://jetextramar.com/wp-content/uploads/2021/06/receta-de-calamares-en-all-i-oli.jpg",
+      "ingredientes": [
+        "Calamares",
+        "harina",
+        "huevo",
+        "aceite",
+        "sal",
+        "limón"
+      ],
+      "pasos": [
+        "Rebozar los calamares",
+        "Freír en aceite caliente",
+        "Servir con limón"
+      ]
+    },
+    {
+      "id": "19",
+      "categoria": "pescado_mariscos",
+      "nombre": "Pulpo a la Gallega",
+      "imagen": "https://imag.bonviveur.com/pulpo-a-la-gallega-recien-hecho.jpg",
+      "ingredientes": [
+        "Pulpo",
+        "patatas",
+        "pimentón",
+        "aceite de oliva",
+        "sal"
+      ],
+      "pasos": [
+        "Cocinar el pulpo",
+        "Cortar en rodajas",
+        "Servir con patatas y pimentón"
+      ]
+    },
+    {
+      "id": "20",
+      "categoria": "pescado_mariscos",
+      "nombre": "Trucha a la Navarra",
+      "imagen": "https://okdiario.com/img/2014/09/22/trucha-navarra-655x368.jpg",
+      "ingredientes": [
+        "Trucha",
+        "jamón serrano",
+        "harina",
+        "aceite",
+        "sal"
+      ],
+      "pasos": [
+        "Rellenar la trucha con jamón",
+        "Rebozar y freír",
+        "Servir caliente"
+      ]
+    },
+    {
+      "id": "21",
+      "categoria": "carne",
       "nombre": "Lasagna",
-      "imagen": "https://ejemplo.com/lasagna.jpg",
+      "imagen": "https://recetas.encolombia.com/wp-content/uploads/2021/03/lasagna-de-carne-clasica.webp",
       "ingredientes": [
         "Placas de lasagna",
         "carne molida",
@@ -231,337 +435,738 @@
       ]
     },
     {
-      "id": "13",
-      "nombre": "Salmón a la Plancha",
-      "imagen": "https://ejemplo.com/salmon-plancha.jpg",
-      "ingredientes": [
-        "Filete de salmón",
-        "sal",
-        "pimienta",
-        "limón",
-        "aceite"
-      ],
-      "pasos": [
-        "Sazonar el salmón",
-        "Cocinar en la plancha con un poco de aceite",
-        "Servir con limón"
-      ]
-    },
-    {
-      "id": "14",
-      "nombre": "Pancakes",
-      "imagen": "https://ejemplo.com/pancakes.jpg",
-      "ingredientes": [
-        "Harina",
-        "huevos",
-        "leche",
-        "azúcar",
-        "polvo de hornear",
-        "sal"
-      ],
-      "pasos": [
-        "Mezclar todos los ingredientes",
-        "Cocinar en una sartén caliente",
-        "Servir con miel o sirope"
-      ]
-    },
-    {
-      "id": "15",
-      "nombre": "Enchiladas",
-      "imagen": "https://ejemplo.com/enchiladas.jpg",
-      "ingredientes": [
-        "Tortillas",
-        "pollo deshebrado",
-        "salsa de enchilada",
-        "queso",
-        "crema",
-        "cebolla"
-      ],
-      "pasos": [
-        "Rellenar las tortillas con el pollo",
-        "Enrollar y colocar en un plato",
-        "Cubrir con la salsa y el queso",
-        "Hornear hasta que el queso esté derretido"
-      ]
-    },
-    {
-      "id": "16",
+      "id": "22",
+      "categoria": "carne",
       "nombre": "Burgers",
-      "imagen": "https://ejemplo.com/burgers.jpg",
+      "imagen": "https://images.ctfassets.net/lufu0clouua1/C7rtQyDeXYr5lvyMaiEzX/3b3cdfec72a95f1803b1ce182aeb224f/burgers-lbm.jpg",
       "ingredientes": [
         "Carne molida",
         "pan de hamburguesa",
-        "queso",
         "lechuga",
         "tomate",
-        "cebolla",
+        "queso",
         "salsa"
       ],
       "pasos": [
-        "Formar la carne en forma de hamburguesa",
-        "Cocinar en la parrilla",
-        "Armar la hamburguesa con los ingredientes"
+        "Formar las hamburguesas",
+        "Cocinar en sartén o parrilla",
+        "Montar en pan con los ingredientes"
       ]
     },
     {
-      "id": "17",
-      "nombre": "Crepes",
-      "imagen": "https://ejemplo.com/crepes.jpg",
+      "id": "23",
+      "categoria": "carne",
+      "nombre": "Estofado de Carne",
+      "imagen": "https://recetasdecocina.elmundo.es/wp-content/uploads/2020/07/estofado-de-ternera.jpg",
       "ingredientes": [
-        "Harina",
-        "huevos",
-        "leche",
-        "azúcar",
-        "sal"
-      ],
-      "pasos": [
-        "Mezclar todos los ingredientes",
-        "Cocinar en una sartén caliente",
-        "Rellenar con lo que desees"
-      ]
-    },
-    {
-      "id": "18",
-      "nombre": "Ceviche",
-      "imagen": "https://ejemplo.com/ceviche.jpg",
-      "ingredientes": [
-        "Pescado",
-        "limón",
+        "Carne de res",
+        "zanahoria",
         "cebolla",
-        "cilantro",
-        "sal"
-      ],
-      "pasos": [
-        "Marinar el pescado en limón",
-        "Agregar la cebolla y el cilantro",
-        "Servir frío"
-      ]
-    },
-    {
-      "id": "19",
-      "nombre": "Mousse de Chocolate",
-      "imagen": "https://ejemplo.com/mousse-chocolate.jpg",
-      "ingredientes": [
-        "Chocolate",
-        "huevos",
-        "azúcar",
-        "nata",
-        "sal"
-      ],
-      "pasos": [
-        "Derretir el chocolate",
-        "Batir las claras a punto de nieve",
-        "Mezclar todo y refrigerar"
-      ]
-    },
-    {
-      "id": "20",
-      "nombre": "Sopa de Tomate",
-      "imagen": "https://ejemplo.com/sopa-tomate.jpg",
-      "ingredientes": [
-        "Tomates",
-        "cebolla",
-        "ajo",
-        "caldo",
+        "patatas",
+        "vino tinto",
+        "caldo de carne",
         "sal",
         "pimienta"
       ],
       "pasos": [
-        "Cocer los tomates con la cebolla y el ajo",
-        "Triturar y colar",
+        "Dorar la carne",
+        "Agregar las verduras y el vino",
+        "Cocinar a fuego lento hasta que la carne esté tierna"
+      ]
+    },
+    {
+      "id": "24",
+      "categoria": "carne",
+      "nombre": "Churrasco",
+      "imagen": "https://churrasco.top/wp-content/uploads/2023/08/receta-de-Churrasco-a-la-Plancha.jpg",
+      "ingredientes": [
+        "Carne de res",
+        "sal",
+        "pimienta",
+        "aceite",
+        "chimichurri"
+      ],
+      "pasos": [
+        "Sazonar la carne",
+        "Asar en parrilla",
+        "Servir con chimichurri"
+      ]
+    },
+    {
+      "id": "25",
+      "categoria": "carne",
+      "nombre": "Albóndigas",
+      "imagen": "https://imag.bonviveur.com/albondigas-con-tomate.jpg",
+      "ingredientes": [
+        "Carne molida",
+        "pan rallado",
+        "huevo",
+        "cebolla",
+        "salsa de tomate",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Mezclar la carne con el pan rallado y el huevo",
+        "Formar las albóndigas",
+        "Cocinar en salsa de tomate"
+      ]
+    },
+    {
+      "id": "26",
+      "categoria": "carne",
+      "nombre": "Carne Asada",
+      "imagen": "https://mandolina.co/wp-content/uploads/2024/06/carne-asada-a-la-parrilla-1080x550-1.jpg",
+      "ingredientes": [
+        "Carne de res",
+        "ajo",
+        "comino",
+        "sal",
+        "pimienta",
+        "aceite"
+      ],
+      "pasos": [
+        "Marinar la carne",
+        "Asar en parrilla",
+        "Servir con guarniciones"
+      ]
+    },
+    {
+      "id": "27",
+      "categoria": "carne",
+      "nombre": "Ribs BBQ",
+      "imagen": "https://www.daringgourmet.com/wp-content/uploads/2024/04/Barbecue-Ribs-Recipe-6.jpg",
+      "ingredientes": [
+        "Costillas de cerdo",
+        "salsa BBQ",
+        "miel",
+        "ajo",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Marinar las costillas",
+        "Asar en parrilla",
+        "Pincelar con salsa BBQ"
+      ]
+    },
+    {
+      "id": "28",
+      "categoria": "carne",
+      "nombre": "Filete Mignon",
+      "imagen": "https://www.elimparcial.com/resizer/v2/OAGLGVKIBFG5LMEXSHPGLPDEB4.jpg?auth=824ce23dad79ab926bbbc396f721c5fbeb3574db3899ed2d89827c1fb5273cae&smart=true&width=1200&height=800&quality=70",
+      "ingredientes": [
+        "Filete de res",
+        "mantequilla",
+        "ajo",
+        "romero",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Sazonar el filete",
+        "Sellar en sartén con mantequilla y ajo",
+        "Servir con romero"
+      ]
+    },
+    {
+      "id": "29",
+      "categoria": "carne",
+      "nombre": "Carne Guisada",
+      "imagen": "https://www.theanthonykitchen.com/wp-content/uploads/2023/09/Carne-Guisada-2.1-square-680x680.jpg",
+      "ingredientes": [
+        "Carne de res",
+        "cebolla",
+        "pimiento",
+        "tomate",
+        "caldo de carne",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Dorar la carne",
+        "Agregar las verduras y el caldo",
+        "Cocinar a fuego lento"
+      ]
+    },
+    {
+      "id": "30",
+      "categoria": "carne",
+      "nombre": "Milanesa de Carne",
+      "imagen": "https://cdn0.recetasgratis.net/es/posts/4/9/8/milanesa_de_carne_11894_600.jpg",
+      "ingredientes": [
+        "Filete de res",
+        "huevo",
+        "pan rallado",
+        "aceite",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Rebozar la carne",
+        "Freír en aceite caliente",
+        "Servir con limón"
+      ]
+    },
+    {
+      "id": "31",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Ensalada de Quinoa y Aguacate",
+      "imagen": "https://cdn.elcocinerocasero.com/imagen/receta/1000/2017-09-11-18-27-47/ensalada-de-quinoa-con-aguacate-y-cherrys.jpeg",
+      "ingredientes": [
+        "Quinoa",
+        "tomate",
+        "pepino",
+        "aguacate",
+        "limón"
+      ],
+      "pasos": [
+        "Cocer la quinoa",
+        "Picar los vegetales",
+        "Mezclar todo"
+      ]
+    },
+    {
+      "id": "32",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Hamburguesa de Lentejas",
+      "imagen": "https://assets.unileversolutions.com/recipes-v2/235071.jpg",
+      "ingredientes": [
+        "Lentejas",
+        "cebolla",
+        "zanahoria",
+        "pan rallado",
+        "especias",
+        "aceite"
+      ],
+      "pasos": [
+        "Cocinar las lentejas",
+        "Mezclar con las verduras y especias",
+        "Formar hamburguesas y cocinar"
+      ]
+    },
+    {
+      "id": "33",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Curry de Verduras",
+      "imagen": "https://imag.bonviveur.com/curry-de-verduras.jpg",
+      "ingredientes": [
+        "Brócoli",
+        "zanahoria",
+        "pimiento",
+        "leche de coco",
+        "curry",
+        "cebolla",
+        "ajo"
+      ],
+      "pasos": [
+        "Sofreír las verduras",
+        "Agregar el curry y la leche de coco",
+        "Cocinar hasta que las verduras estén tiernas"
+      ]
+    },
+    {
+      "id": "34",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Tofu Salteado",
+      "imagen": "https://cdn3.myrealfood.app/recipes%2FjfkXBTDBlmAE6gJlnEfC%2Fmain.jpg?alt=media&token=2c26abce-2e2d-4ce4-8415-f6c95de9e020",
+      "ingredientes": [
+        "Tofu",
+        "cebolla",
+        "pimiento",
+        "salsa de soja",
+        "aceite de sésamo",
+        "jengibre"
+      ],
+      "pasos": [
+        "Dorar el tofu",
+        "Agregar las verduras y la salsa de soja",
+        "Cocinar hasta que esté listo"
+      ]
+    },
+    {
+      "id": "35",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Falafel",
+      "imagen": "https://i0.wp.com/osojimix.com/wp-content/uploads/2022/05/Falafel-de-garbanzos-Pa%CC%81gina.jpg?fit=500%2C500&ssl=1",
+      "ingredientes": [
+        "Garbanzos",
+        "cebolla",
+        "ajo",
+        "perejil",
+        "comino",
+        "harina",
+        "aceite"
+      ],
+      "pasos": [
+        "Triturar los garbanzos",
+        "Formar bolitas",
+        "Freír en aceite caliente"
+      ]
+    },
+    {
+      "id": "36",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Pizza Vegetariana",
+      "imagen": "https://www.revistapancaliente.co/wp-content/uploads/2024/09/Pizza_vegetariana.jpg",
+      "ingredientes": [
+        "Masa de pizza",
+        "tomate",
+        "queso vegano",
+        "champiñones",
+        "pimiento",
+        "cebolla"
+      ],
+      "pasos": [
+        "Extender la masa",
+        "Agregar los ingredientes",
+        "Hornear hasta que esté dorada"
+      ]
+    },
+    {
+      "id": "37",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Ensalada César Vegana",
+      "imagen": "https://www.bioecoactual.com/wp-content/uploads/2021/11/ensalada-Cesar-vegana.jpg",
+      "ingredientes": [
+        "Lechuga",
+        "crutones",
+        "salsa César vegana",
+        "tofu",
+        "limón"
+      ],
+      "pasos": [
+        "Cortar la lechuga",
+        "Agregar los crutones y el tofu",
+        "Mezclar con la salsa"
+      ]
+    },
+    {
+      "id": "38",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Sopa de Verduras",
+      "imagen": "https://comedera.com/wp-content/uploads/sites/9/2013/05/sopa-de-verduras-1.jpg?resize=360,202&quality=80",
+      "ingredientes": [
+        "Zanahoria",
+        "apio",
+        "cebolla",
+        "patata",
+        "caldo de verduras",
+        "sal",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cortar las verduras",
+        "Cocinar en el caldo",
         "Servir caliente"
       ]
     },
     {
-      "id": "21",
-      "nombre": "Pollo Asado",
-      "imagen": "https://ejemplo.com/pollo-asado.jpg",
+      "id": "39",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Ratatouille",
+      "imagen": "https://cdn.colombia.com/gastronomia/2011/08/11/ratatouille-3306.jpg",
       "ingredientes": [
-        "Pollo",
-        "sal",
-        "pimienta",
+        "Berenjena",
+        "calabacín",
+        "pimiento",
+        "tomate",
+        "cebolla",
         "ajo",
-        "limón"
+        "aceite de oliva"
       ],
       "pasos": [
-        "Sazonar el pollo",
-        "Asar en el horno hasta que esté dorado"
+        "Cortar las verduras",
+        "Colocar en una bandeja",
+        "Hornear hasta que estén tiernas"
       ]
     },
     {
-      "id": "22",
-      "nombre": "Tarta de Manzana",
-      "imagen": "https://ejemplo.com/tarta-manzana.jpg",
+      "id": "40",
+      "categoria": "vegano_vegetariano",
+      "nombre": "Buddha Bowl",
+      "imagen": "https://www.crazyvegankitchen.com/wp-content/uploads/2024/06/buddha-bowl-683x1024.jpg",
       "ingredientes": [
-        "Masa de tarta",
-        "manzanas",
+        "Quinoa",
+        "garbanzos",
+        "aguacate",
+        "zanahoria",
+        "espinacas",
+        "sésamo",
+        "limón"
+      ],
+      "pasos": [
+        "Cocinar la quinoa",
+        "Colocar todos los ingredientes en un bol",
+        "Servir con limón"
+      ]
+    },
+    {
+      "id": "41",
+      "categoria": "postres",
+      "nombre": "Brownies",
+      "imagen": "https://happyvegannie.com/wp-content/uploads/2023/07/los-mejores-brownies-fudgy-10-copy.jpg",
+      "ingredientes": [
+        "Chocolate",
+        "harina",
+        "azúcar",
+        "mantequilla",
+        "huevos"
+      ],
+      "pasos": [
+        "Mezclar ingredientes",
+        "Hornear a 180°C por 30 minutos"
+      ]
+    },
+    {
+      "id": "42",
+      "categoria": "postres",
+      "nombre": "Tarta de Queso",
+      "imagen": "https://imag.bonviveur.com/tarta-de-queso-la-vina.jpg",
+      "ingredientes": [
+        "Queso crema",
+        "galletas",
+        "mantequilla",
+        "azúcar",
+        "huevos",
+        "nata"
+      ],
+      "pasos": [
+        "Triturar las galletas y mezclar con mantequilla",
+        "Preparar la mezcla de queso",
+        "Hornear a 160°C por 40 minutos"
+      ]
+    },
+    {
+      "id": "43",
+      "categoria": "postres",
+      "nombre": "Flan",
+      "imagen": "https://dietamediterranea.com/wp-content/uploads/2017/04/20170424-Flan.jpg",
+      "ingredientes": [
+        "Huevos",
+        "leche",
+        "azúcar",
+        "vainilla"
+      ],
+      "pasos": [
+        "Preparar el caramelo",
+        "Mezclar los ingredientes",
+        "Hornear a baño María"
+      ]
+    },
+    {
+      "id": "44",
+      "categoria": "postres",
+      "nombre": "Mousse de Chocolate",
+      "imagen": "https://www.allrecipes.com/thmb/BVIa5dKfGQlpQJ_epc6wH6Vm990=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/IMG_8145_Chocolate-Mousse-for-Beginners-4x3-cropped-757ae43035ff48cc8bc9ccffbd6cf3b7.jpg",
+      "ingredientes": [
+        "Chocolate",
+        "nata",
+        "huevos",
+        "azúcar"
+      ],
+      "pasos": [
+        "Derretir el chocolate",
+        "Montar la nata",
+        "Mezclar y refrigerar"
+      ]
+    },
+    {
+      "id": "45",
+      "categoria": "postres",
+      "nombre": "Tiramisú",
+      "imagen": "https://alqueria.com.co/sites/default/files/styles/1327_612/public/receta-de-tiramisu_0.jpg?h=2dfa7a18&itok=XrrIoNPo",
+      "ingredientes": [
+        "Queso mascarpone",
+        "café",
+        "bizcochos",
+        "huevos",
+        "azúcar",
+        "cacao"
+      ],
+      "pasos": [
+        "Preparar el café",
+        "Montar el queso con los huevos",
+        "Intercalar capas de bizcochos y queso",
+        "Espolvorear con cacao"
+      ]
+    },
+    {
+      "id": "46",
+      "categoria": "postres",
+      "nombre": "Cheesecake",
+      "imagen": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FSeries%2F2024-07-how-to-make-perfect-cheesecake%2Fhow-to-make-perfect-cheesecake-319",
+      "ingredientes": [
+        "Queso crema",
+        "galletas",
+        "mantequilla",
+        "azúcar",
+        "huevos",
+        "nata"
+      ],
+      "pasos": [
+        "Triturar las galletas y mezclar con mantequilla",
+        "Preparar la mezcla de queso",
+        "Hornear a 160°C por 40 minutos"
+      ]
+    },
+    {
+      "id": "47",
+      "categoria": "postres",
+      "nombre": "Crema Catalana",
+      "imagen": "https://www.annarecetasfaciles.com/files/crema-catalana-3-scaled.jpg",
+      "ingredientes": [
+        "Leche",
+        "yemas de huevo",
+        "azúcar",
+        "canela",
+        "limón"
+      ],
+      "pasos": [
+        "Calentar la leche con la canela y el limón",
+        "Mezclar con las yemas y el azúcar",
+        "Caramelizar la superficie"
+      ]
+    },
+    {
+      "id": "48",
+      "categoria": "postres",
+      "nombre": "Tarta de Manzana",
+      "imagen": "https://mandolina.co/wp-content/uploads/2020/11/tarta-de-manzana.jpg",
+      "ingredientes": [
+        "Manzanas",
+        "masa quebrada",
         "azúcar",
         "canela",
         "mantequilla"
       ],
       "pasos": [
-        "Forrar un molde con la masa",
-        "Rellenar con las manzanas",
-        "Espolvorear con azúcar y canela",
+        "Extender la masa",
+        "Colocar las manzanas",
+        "Hornear a 180°C por 30 minutos"
+      ]
+    },
+    {
+      "id": "49",
+      "categoria": "postres",
+      "nombre": "Helado de Vainilla",
+      "imagen": "https://www.eis-perfecto.de/wp-content/uploads/2024/04/Vanille-Eis-mit-Ananas-Swirl-848x477.jpg",
+      "ingredientes": [
+        "Leche",
+        "nata",
+        "azúcar",
+        "vainilla",
+        "yemas de huevo"
+      ],
+      "pasos": [
+        "Mezclar los ingredientes",
+        "Congelar",
+        "Batir cada hora hasta que esté cremoso"
+      ]
+    },
+    {
+      "id": "50",
+      "categoria": "postres",
+      "nombre": "Coulant de Chocolate",
+      "imagen": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/f058cc67b3df69d9d639230500fb261e/Derivates/9cf0db7a63048d16087e4a1cb760752d4947bd3c.jpg",
+      "ingredientes": [
+        "Chocolate",
+        "mantequilla",
+        "huevos",
+        "azúcar",
+        "harina"
+      ],
+      "pasos": [
+        "Derretir el chocolate",
+        "Mezclar con los demás ingredientes",
+        "Hornear a 200°C por 10 minutos"
+      ]
+    },
+    {
+      "id": "51",
+      "categoria": "pastas",
+      "nombre": "Pasta al Pesto",
+      "imagen": "https://www.elespectador.com/resizer/v2/D2ZZOK5YWBGHPLRFIFADGQKB4I.jpg?auth=b45ced8ef290ed246e2009db171f6b73e237eb70c74aaa2c8749ed5f936b16fa&width=920&height=613&smart=true&quality=60",
+      "ingredientes": [
+        "Pasta",
+        "albahaca",
+        "ajo",
+        "queso parmesano",
+        "aceite de oliva",
+        "piñones"
+      ],
+      "pasos": [
+        "Cocer la pasta",
+        "Preparar el pesto mezclando los ingredientes",
+        "Mezclar la pasta con el pesto"
+      ]
+    },
+    {
+      "id": "52",
+      "categoria": "pastas",
+      "nombre": "Spaghetti Carbonara",
+      "imagen": "https://sivarious.com/wp-content/uploads/2017/05/espaguetis-carbonara.jpg",
+      "ingredientes": [
+        "Spaghetti",
+        "huevo",
+        "queso parmesano",
+        "panceta",
+        "ajo",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cocinar la pasta",
+        "Dorar la panceta",
+        "Mezclar con el huevo y el queso"
+      ]
+    },
+    {
+      "id": "53",
+      "categoria": "pastas",
+      "nombre": "Lasagna de Espinacas",
+      "imagen": "https://www.unileverfoodsolutions.es/dam/global-ufs/mcos/SPAIN/calcmenu/recipes/ES-recipes/general/lasa%C3%B1a-de-espinacas-con-ricotta-pi%C3%B1ones-y-pasas/main-header.jpg",
+      "ingredientes": [
+        "Placas de lasagna",
+        "espinacas",
+        "queso ricotta",
+        "salsa de tomate",
+        "cebolla",
+        "ajo"
+      ],
+      "pasos": [
+        "Cocinar las espinacas",
+        "Intercalar capas de pasta, espinacas y queso",
         "Hornear hasta que esté dorada"
       ]
     },
     {
-      "id": "23",
-      "nombre": "Curry de Verduras",
-      "imagen": "https://ejemplo.com/curry-verduras.jpg",
+      "id": "54",
+      "categoria": "pastas",
+      "nombre": "Penne al Arrabbiata",
+      "imagen": "https://theplantbasedschool.com/wp-content/uploads/2022/04/Penne-arrabbiata-with-sausage-4.jpg",
       "ingredientes": [
-        "Verduras",
-        "curry en polvo",
-        "leche de coco",
-        "cebolla",
+        "Penne",
+        "tomate",
         "ajo",
-        "aceite",
-        "sal"
+        "guindilla",
+        "aceite de oliva",
+        "albahaca"
       ],
       "pasos": [
-        "Sofreír la cebolla y el ajo",
-        "Agregar las verduras y el curry",
-        "Incorporar la leche de coco y cocinar hasta que las verduras estén tiernas"
+        "Cocinar la pasta",
+        "Preparar la salsa con tomate y guindilla",
+        "Mezclar la pasta con la salsa"
       ]
     },
     {
-      "id": "24",
-      "nombre": "Pimientos Rellenos",
-      "imagen": "https://ejemplo.com/pimientos-rellenos.jpg",
+      "id": "55",
+      "categoria": "pastas",
+      "nombre": "Raviolis de Queso",
+      "imagen": "https://www.flordeburgos.com/wp-content/uploads/2022/07/foto-blog-Ravioli-con-salsa-de-queso-sin-lactosa-1.jpg",
       "ingredientes": [
-        "Pimientos",
-        "carne",
-        "arroz",
+        "Raviolis",
+        "queso ricotta",
+        "espinacas",
         "salsa de tomate",
-        "queso"
-      ],
-      "pasos": [
-        "Cocer el arroz",
-        "Rellenar los pimientos con la mezcla",
-        "Cubrir con salsa y queso",
-        "Hornear hasta que estén tiernos"
-      ]
-    },
-    {
-      "id": "25",
-      "nombre": "Sushi de Verduras",
-      "imagen": "https://ejemplo.com/sushi-verduras.jpg",
-      "ingredientes": [
-        "Arroz",
-        "algas nori",
-        "verduras",
-        "vinagre",
-        "azúcar",
-        "sal"
-      ],
-      "pasos": [
-        "Cocer el arroz",
-        "Picar las verduras",
-        "Enrollar el sushi con los ingredientes"
-      ]
-    },
-    {
-      "id": "26",
-      "nombre": "Pasta con Salsa Alfredo",
-      "imagen": "https://ejemplo.com/pasta-alfredo.jpg",
-      "ingredientes": [
-        "Pasta",
-        "nata",
-        "queso",
-        "mantequilla",
-        "sal",
-        "pimienta"
-      ],
-      "pasos": [
-        "Cocer la pasta",
-        "Calentar la nata con el queso y la mantequilla",
-        "Mezclar con la pasta"
-      ]
-    },
-    {
-      "id": "27",
-      "nombre": "Tacos de Pescado",
-      "imagen": "https://ejemplo.com/tacos-pescado.jpg",
-      "ingredientes": [
-        "Tortillas",
-        "pescado",
-        "cabbage",
-        "salsa",
-        "limón"
-      ],
-      "pasos": [
-        "Cocinar el pescado",
-        "Calentar las tortillas",
-        "Armar los tacos con los ingredientes"
-      ]
-    },
-    {
-      "id": "28",
-      "nombre": "Brownies de Chocolate Blanco",
-      "imagen": "https://ejemplo.com/brownies-chocolate-blanco.jpg",
-      "ingredientes": [
-        "Chocolate blanco",
-        "mantequilla",
-        "azúcar",
-        "huevos",
-        "harina",
-        "nueces"
-      ],
-      "pasos": [
-        "Derretir el chocolate y la mantequilla",
-        "Mezclar con el azúcar y los huevos",
-        "Agregar la harina y las nueces",
-        "Hornear"
-      ]
-    },
-    {
-      "id": "29",
-      "nombre": "Ensalada César",
-      "imagen": "https://ejemplo.com/ensalada-cesar.jpg",
-      "ingredientes": [
-        "Lechuga",
-        "pollo",
-        "crutones",
-        "queso",
-        "salsa César"
-      ],
-      "pasos": [
-        "Cocer el pollo",
-        "Mezclar todos los ingredientes",
-        "Servir frío"
-      ]
-    },
-    {
-      "id": "30",
-      "nombre": "Pizza de Pepperoni",
-      "imagen": "https://ejemplo.com/pizza-pepperoni.jpg",
-      "ingredientes": [
-        "Masa de pizza",
-        "salsa de tomate",
-        "queso",
-        "pepperoni"
-      ],
-      "pasos": [
-        "Extender la masa",
-        "Agregar la salsa y el queso",
-        "Colocar el pepperoni",
-        "Hornear hasta que el queso esté derretido"
-      ]
-    },
-    {
-      "id": "19f2",
-      "nombre": "Esto es una prueba",
-      "imagen": "https://ejemplo.com/pasta-pesto.jpg",
-      "ingredientes": [
-        "Pasta",
-        "albahaca",
         "queso parmesano"
       ],
       "pasos": [
-        "Cocer la pasta",
-        "Hacer el pesto",
-        "Mezclar todo"
+        "Cocinar los raviolis",
+        "Preparar la salsa",
+        "Servir con queso parmesano"
+      ]
+    },
+    {
+      "id": "56",
+      "categoria": "pastas",
+      "nombre": "Fettuccine Alfredo",
+      "imagen": "https://www.thespruceeats.com/thmb/gTjo1gnOuBEVJsttgDW2JljvKY0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shrimp-fettuccine-alfredo-recipe-5205738-hero-01-1a40571b0e3e4a17ab768b4d700c7836.jpg",
+      "ingredientes": [
+        "Fettuccine",
+        "mantequilla",
+        "nata",
+        "queso parmesano",
+        "pimienta"
+      ],
+      "pasos": [
+        "Cocinar la pasta",
+        "Preparar la salsa con mantequilla y nata",
+        "Mezclar la pasta con la salsa"
+      ]
+    },
+    {
+      "id": "57",
+      "categoria": "pastas",
+      "nombre": "Lasaña de Berenjena",
+      "imagen": "https://content-cocina.lecturas.com/medio/2018/07/19/lasana-de-pollo-y-berenjena_00000000_240424170139_1200x1200.jpg",
+      "ingredientes": [
+        "Placas de lasagna",
+        "berenjena",
+        "queso",
+        "salsa de tomate",
+        "cebolla",
+        "ajo"
+      ],
+      "pasos": [
+        "Cocinar la berenjena",
+        "Intercalar capas de pasta, berenjena y queso",
+        "Hornear hasta que esté dorada"
+      ]
+    },
+    {
+      "id": "58",
+      "categoria": "pastas",
+      "nombre": "Macarrones con Queso",
+      "imagen": "https://www.infobae.com/resizer/v2/P2SYDSP2W5FKHN3BHE6T5RG36I.jpeg?auth=a86a90026350c1b1829ea9232beb5161f562f30c35c132459ad131411a31df91&smart=true&width=1200&height=1200&quality=85",
+      "ingredientes": [
+        "Macarrones",
+        "queso cheddar",
+        "leche",
+        "mantequilla",
+        "harina"
+      ],
+      "pasos": [
+        "Cocinar la pasta",
+        "Preparar la salsa de queso",
+        "Mezclar la pasta con la salsa"
+      ]
+    },
+    {
+      "id": "59",
+      "categoria": "pastas",
+      "nombre": "Pasta Primavera",
+      "imagen": "https://images.themodernproper.com/production/posts/PastaPrimavera_10.jpg?w=1200&q=82&auto=format&fit=crop&dm=1719193287&s=7669daa8282feb2437737d045e685766",
+      "ingredientes": [
+        "Pasta",
+        "brócoli",
+        "zanahoria",
+        "pimiento",
+        "cebolla",
+        "aceite de oliva"
+      ],
+      "pasos": [
+        "Cocinar la pasta",
+        "Saltear las verduras",
+        "Mezclar la pasta con las verduras"
+      ]
+    },
+    {
+      "id": "60",
+      "categoria": "pastas",
+      "nombre": "Canelones de Carne",
+      "imagen": "https://www.clarin.com/2021/06/04/y8kPKKxo5_360x240__1.jpg",
+      "ingredientes": [
+        "Canelones",
+        "carne molida",
+        "salsa de tomate",
+        "queso",
+        "cebolla",
+        "ajo"
+      ],
+      "pasos": [
+        "Cocinar la carne",
+        "Rellenar los canelones",
+        "Hornear con salsa y queso"
       ]
     }
   ]

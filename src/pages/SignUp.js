@@ -10,7 +10,7 @@ const SignUp = ({ navigation }) => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   return (
-    <ScreenContainer backgroundColor="#fff">
+    <ScreenContainer background={require("../assets/background.jpg")}>
       <Text style={globalStyles.title}>Crear Cuenta</Text>
       <TextInput 
         style={globalStyles.input} 

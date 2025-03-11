@@ -9,7 +9,8 @@ import SignUp from "../pages/SignUp";
 import Home from "../pages/Home";
 import BuscarRecetas from "../pages/BuscarRecetas";
 import CrearReceta from "../pages/CrearReceta";
-
+import RecetasPorCategoria from "../pages/RecetasPorCategoria"
+import DetalleReceta from "../pages/DetalleReceta"
 const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
@@ -23,6 +24,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="BuscarRecetas" component={BuscarRecetas} />
         <Stack.Screen name="CrearReceta" component={CrearReceta} />
+        <Stack.Screen name="RecetasPorCategoria" component={RecetasPorCategoria} />
+        <Stack.Screen name="DetalleReceta" component={DetalleReceta} />
       </Stack.Navigator>
     </NavigationContainer>
   );
