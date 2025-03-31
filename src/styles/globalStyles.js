@@ -253,6 +253,20 @@ const globalStyles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 10,
   },
+  favButton: {
+    backgroundColor: "#f5e3d8", // Color amarillo
+    padding: 10,
+    borderRadius: 10,
+    marginVertical: 10,
+    alignItems: "center",
+  },
+  
+  favText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#000",
+  },
+  
 });
 
 export default globalStyles;

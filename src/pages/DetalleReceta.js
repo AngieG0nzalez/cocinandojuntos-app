@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from "react";
-import {
-  Text,
-  FlatList,
-  View,
-  Image,
-  ScrollView,
-} from "react-native";
+import { Text, FlatList, View, Image, ScrollView } from "react-native";
 import globalStyles from "../styles/globalStyles";
 import ScreenContainer from "../components/ScreenContainer";
 import BottomMenu from "../components/BottomMenu";
 import api from "../services/api";
+import {
+  agregarAFavoritos,
+  eliminarDeFavoritos,
+  esFavorito,
+} from "../services/favoritosService";
+import { TouchableOpacity } from "react-native";
 
 const DetalleReceta = ({ navigation, route }) => {
   const { id } = route.params;
+  const userId = "Wilson123";
   const [receta, setReceta] = useState(null);
+  const [favorita, setFavorita] = useState(false);
 
   useEffect(() => {
     const fetchReceta = async () => {
@@ -21,6 +23,8 @@ const DetalleReceta = ({ navigation, route }) => {
         const response = await api.getById(id); // Obtener receta por ID
         if (response) {
           setReceta(response);
+          const favorito = await esFavorito(userId, id);
+          setFavorita(favorito); // Verificar si la receta está en favoritos
         } else {
           console.error("No se encontró la receta");
         }
@@ -32,6 +36,20 @@ const DetalleReceta = ({ navigation, route }) => {
     fetchReceta();
   }, [id]);
 
+  // Función para agregar o quitar la receta de favoritos
+  const toggleFavorito = async () => {
+    if (favorita) {
+      console.log("🚀 ~ toggleFavorito ~ favorita:", favorita)
+      await eliminarDeFavoritos(userId, id);
+    } else {
+      await agregarAFavoritos(userId, receta);
+    }
+      console.log("🚀 ~ toggleFavorito ~ receta:", receta)
+      console.log("🚀 ~ toggleFavorito ~ id:", id)
+      console.log("🚀 ~ toggleFavorito ~ userId:", userId)
+    setFavorita(!favorita);
+  };
+
   if (!receta) {
     return (
       <ScreenContainer backgroundColor="#DCB9A3">
@@ -42,9 +60,19 @@ const DetalleReceta = ({ navigation, route }) => {
 
   return (
     <ScreenContainer backgroundColor="#DCB9A3">
+
+      <TouchableOpacity onPress={toggleFavorito} style={globalStyles.favButton}>
+        <Text style={globalStyles.favText}>
+          {favorita ? "❤️ Quitar de Favoritos" : "🤍 Agregar a Favoritos"}
+        </Text>
+      </TouchableOpacity>
+
       <ScrollView style={globalStyles.containerDetail}>
         {/* Imagen de la receta */}
-        <Image source={{ uri: receta.imagen }} style={globalStyles.imageDetail} />
+        <Image
+          source={{ uri: receta.imagen }}
+          style={globalStyles.imageDetail}
+        />
 
         {/* Nombre de la receta */}
         <Text style={globalStyles.titleDetail}>{receta.nombre}</Text>
