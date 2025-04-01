@@ -1,6 +1,6 @@
 import { db } from "../../firebaseConfig";
 import { doc, setDoc, deleteDoc, getDocs, collection, getDoc } from "firebase/firestore";
-
+//prueba
 /**
  * Agrega una receta a favoritos en Firestore
  * @param {string} userId - ID del usuario
